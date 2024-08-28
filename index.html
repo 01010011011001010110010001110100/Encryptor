@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./js/app.js" defer></script>
+    <title>Encryptor</title>
+</head>
+<body>
+    <main>
+        <div class="left-content">
+            <div class="logo-content">
+                <img src="./img/Logo.png" alt="Alura Logo">
+            </div>
+            <div class="input-content"> 
+                <textarea id="userInput" rows="4" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="buttons-content">
+                <p><i class="bi bi-exclamation-circle-fill"></i>Solo letras minúsculas y sin acentos</p>
+                <div class="buttons-content-div">
+                    <button class="btn-primary" onclick="Encrypt()">Encriptar</button>
+                    <button class="btn-secondary" onclick="Decrypt()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="info-result">
+                <img src="./img/Doll.png" alt="Dot looking for the result">
+                <p><strong>Ningún mensaje fue encontrado</strong></p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="result-content" hidden>
+                <p id="result-text"></p>
+                <button class="btn-primary" onclick="CopyResult()">Copiar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
